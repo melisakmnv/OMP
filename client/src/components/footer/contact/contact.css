@@ -1,0 +1,52 @@
+/* CONTACT LOGO */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contact__logo_wrapper {
+  cursor: pointer;
+  width: 60px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__logo {
+  background: #e8d2bd;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.contact__logo > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.contact__info {
+  display: none;
+  background: rgba(0, 0, 0, 0.691);
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  top: 80%;
+  letter-spacing: 0.5px;
+}
+
+.contact__logo_wrapper:hover + .contact__info {
+  display: block;
+}

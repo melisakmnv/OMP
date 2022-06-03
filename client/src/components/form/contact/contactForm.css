@@ -1,0 +1,36 @@
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 30vw;
+    border: solid 3px purple;
+    gap: 1.5em;
+  }
+  
+  .contact-form > label {
+    display: none;
+  }
+  
+  .contact-form > input {
+    border: none;
+    border-radius: 30px;
+    min-height: 2.5em;
+    padding: 0.2em 2em;
+  }
+  
+  .contact-form > textarea {
+    border: none;
+    border-radius: 30px;
+    min-height: 12.5em;
+    padding: 2em;
+  }
+  
+  .contact-form__submit-button {
+    padding: 1em;
+    width: fit-content;
+    align-self: center;
+    margin-top: -3.2em;
+    z-index: 1000000;
+    background-color: #fdece3;
+  } 

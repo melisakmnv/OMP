@@ -1,0 +1,34 @@
+Model : 
+    - Beer = Done
+    - Event = Done
+    - User = Done
+
+Route : 
+    - Beer = Done
+    - Event = Done
+    - Auth = Done
+    - User 
+
+Controller :
+    - Beer = Done
+    - Event = Done
+    - Auth = Done
+    - User = 
+
+Middleware : 
+    DONE - Error Handler : Beer  / Handle Clean & Clear Error / DEV - PROD MODE 
+    DONE - Error Handler : Event / Handle Clean & Clear Error
+    DONE - Error Handler : Auth / Handle Clean & Clear Error
+    - Error Handler : User / Handle Clean & Clear Error
+
+    DONE - Authentication Handler : Beer / Handle Who Can Access to the ressources
+    DONE - Authentication Handler : Event / Handle Who Can Access to the ressources
+    DONE - Authentication Handler : User / Handle Who Can Access to the ressources
+
+EXTRA :
+    - Reset Password
+    - Order Model
+    - Order Routes
+    - Order Controllers
+    - Payment
+

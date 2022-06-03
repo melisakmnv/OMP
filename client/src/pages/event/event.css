@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Prompt:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Caveat&family=Prompt:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Caveat&family=Prompt:ital,wght@1,200&family=Red+Hat+Display:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
+.event__container {
+    border: 5px solid yellow;
+}
+
+
+.eventSection__{
+    border: 5px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.eventSection__title {
+    border: 1px solid red;
+
+}
+
+.eventSection__content{
+    width: 80%;
+    /* border: 5px solid green; */
+    margin:50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.eventSection__content__img {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventSection__content__img>img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.eventSection__content__desc {
+    width: 500px;
+    /* margin: 0 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid red; */
+}
+
+
+
+.eventSection__content__desc>h3 , .eventSection__content__desc>p {
+    /* font-family: 'Spline Sans Mono', monospace; */
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+
+/* .eventSection__content__desc>p  {
+    text-align: center;
+} */
+
+
+.eventSection__content__desc> span{
+    /* font-family: 'Prompt', sans-serif; */
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Assistant', sans-serif;
+    /* font-family: 'Red Hat Display', sans-serif; */
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-weight: 300;
+    word-spacing: 3px;
+    font-size: 20px;
+    text-align: center;
+} 
+
+.eventSection__time {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px 0 0 ;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+hr{
+   width: 30%;
+}

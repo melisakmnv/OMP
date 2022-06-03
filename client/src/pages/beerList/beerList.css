@@ -1,0 +1,31 @@
+.beerList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.beerList__pagination {
+    position: fixed;
+    top: calc(50vh - 100px);
+    right: 20px;
+}
+
+
+.beerList__container {
+    margin: 50px 120px;
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+
+.beerSection__item {
+    margin: 10px 0;
+}
+
+

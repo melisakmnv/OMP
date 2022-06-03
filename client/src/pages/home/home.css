@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Indie+Flower&family=Montserrat:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======== SECTIONS ======== */
+.homeSection {
+  /* border: 5px solid blue; */
+  /* margin: 150px 0 0; */
+}
+
+.homeSection__title {
+  text-align: center;
+  margin: 90px 0 70px;
+  /* border: 1px solid red; */
+}
+
+.homeSection__title > h1 {
+  margin: 0;
+}
+
+/* ======= BEER SECTION ======= */
+
+.beerSection__main {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 5px solid yellow; */
+}
+
+.beerSection__item {
+  /* border: 5px solid green; */
+  border-radius: 10px;
+}
+
+.beerSection__img {
+  width: 230px;
+  height: 310px;
+  background: #eee8db;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beerSection__img > img {
+  height: 90%;
+  object-fit: cover;
+}
+
+.beerSection__desc {
+  font-family: "Inconsolata", monospace;
+}
+
+.beerSection__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background: white;
+  border: 1px solid rgb(213, 213, 213);
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+/* .beerSection__footer > button {
+  background: white;
+  border: 1px solid rgb(213, 213, 213);
+  padding: 10px 14px;
+  border-radius: 5px;
+} */
+
+/* ======= END BEER SECTION ======= */
+
+/* ======= HISTORY SECTION ======= */
+
+.historySection__main {
+  background: #fdece3;
+}
+
+.historySection__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.historySection__img,
+.historySection__img1 {
+  /* border: 5px solid purple; */
+  -webkit-box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.35);
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 340px;
+  position: relative;
+  background: white;
+}
+
+.historySection__img > span,
+.historySection__img1 > span,
+.eventSection__img > span,
+.eventSection__img1 > span {
+  position: absolute;
+  bottom: 30px;
+}
+
+.historySection__img__wrapper,
+.historySection__img__wrapper1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -50px;
+}
+.historySection__img__wrapper > img,
+.historySection__img__wrapper1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.historySection__title {
+  width: 500px;
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  line-height: 35px;
+}
+
+/* STORY IMAGE ROTATION EFFECT */
+
+.historySection__img,
+.eventSection__img {
+  transform: rotate(-10deg);
+}
+.historySection__img1,
+.eventSection__img1 {
+  transform: rotate(10deg);
+}
+
+/* SCOTCH TAPE EFFECT */
+
+.tape {
+  text-align: center;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+}
+
+.opposite-corners:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  margin: auto;
+  background: rgba(248, 248, 234, 0.6);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ======= END HISTORY SECTION ======= */
+
+/* ======= EVENT SECTION ======= */
+
+.eventSection__main {
+  /* border: 5px solid yellow; */
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.eventSection__img,
+.eventSection__img1 {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 270px;
+  position: relative;
+  background: white;
+  transition: 0.3s ease-in-out;
+}
+
+.eventSection__img__wrapper,
+.eventSection__img__wrapper1 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 10px;
+}
+
+.eventSection__img__wrapper > img,
+.eventSection__img__wrapper1 > img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+
+}
+
+
+
+.eventSection__main > div:nth-child(1) {
+  z-index: 1;
+}
+.eventSection__main > div:nth-child(2) {
+  z-index: 2;
+}
+.eventSection__main > div:nth-child(3) {
+  z-index: 3;
+}
+.eventSection__main > div:nth-child(4) {
+  z-index: 4;
+}
+
+/* HOVER EFFECT */
+
+.eventSection__img:hover, .eventSection__img1:hover {
+  overflow: hidden;
+  transform: rotate(0);
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+/* ======= END EVENT SECTION ======= */

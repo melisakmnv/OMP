@@ -1,0 +1,21 @@
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination>span {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination>span:hover {
+    background: lightgray;
+}
