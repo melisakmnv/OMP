@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import colors from 'colors';
-import {beers} from './data/beers.js'
-import {users} from './data/users.js'
-import {events} from './data/events.js'
-import BeerModel from './models/beer.model.js'
-import UserModel from './models/user.model.js'
-import EventModel from './models/event.model.js'
-import { connectDB } from './config/connectDB.js';
+import {beers} from '../data/beers.js'
+import {users} from '../data/users.js'
+import {events} from '../data/events.js'
+import BeerModel from '../models/beer.model.js'
+import UserModel from '../models/user.model.js'
+import EventModel from '../models/event.model.js'
+import { connectDB } from './connectDB.js';
 
 dotenv.config();
 connectDB();
